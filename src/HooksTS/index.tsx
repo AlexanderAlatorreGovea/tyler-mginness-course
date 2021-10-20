@@ -1,3 +1,5 @@
+import { useReducer } from "react";
+
 type Category = "Bread" | "Fruit" | "Vegetable" | "Meat" | "Milk";
 
 interface ShoppingListItem {
@@ -69,3 +71,12 @@ function shoppingReducer(
       return state;
   }
 }
+
+const Button = () => {
+  const [state, dispatch] = useReducer(shoppingReducer, []);
+  dispatch({
+    type: "add",
+    category: "Bread",
+  });
+  return <div></div>;
+};
