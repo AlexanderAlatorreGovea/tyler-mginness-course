@@ -6,10 +6,15 @@ export default class Comp extends Component {
   }
 }
 
-export function RenderComponent({ Comp }: { Comp: ComponentType }) {
+interface ChildrenProps {
+  Comp: ComponentType;
+}
+
+export function RenderComponent({ Comp }: ChildrenProps) {
   return (
     <div>
       <Comp />
+      <button></button>
     </div>
   );
 }
