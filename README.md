@@ -1,1 +1,1 @@
-This is a repo to go over some of the main hook concepts based on a course by Tyler McGinnes. 
+This is a repo to go over some of the main hook concepts based on a course by Tyler McGinnes. I added more files to practice custom hooks.

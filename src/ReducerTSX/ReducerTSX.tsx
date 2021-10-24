@@ -30,17 +30,21 @@ interface FetchState {
   data: null | DadJokeResponse;
   error: null | Error;
 }
+
 interface FetchDataAction {
   type: "data";
   data: DadJokeResponse;
 }
+
 interface FetchErrorAction {
   type: "error";
   error: Error;
 }
+
 interface FetchLoadingAction {
   type: "loading";
 }
+
 type FetchActions = FetchDataAction | FetchErrorAction | FetchLoadingAction;
 
 function fetchReducer(state: FetchState, action: FetchActions): FetchState {

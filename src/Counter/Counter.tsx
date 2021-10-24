@@ -18,7 +18,7 @@ class Counter extends React.Component<CounterProps, CounterState> {
       count: props.defaultCount,
     };
   }
-  
+
   state: CounterState;
 
   increment = () => {
@@ -36,8 +36,8 @@ class Counter extends React.Component<CounterProps, CounterState> {
     return (
       <div>
         <h1>Count: {this.state.count}</h1>
-        <button onClick={increment}>-</button>
-        <button onClick={decrement}>+</button>
+        <button onClick={this.increment}>-</button>
+        <button onClick={this.decrement}>+</button>
       </div>
     );
   }
